@@ -1,0 +1,76 @@
+
+Name:Dilip Raja S
+phone no:9361536356
+
+
+import java.util.Scanner;
+class DataSet
+{
+
+    public void speeddata() {
+        Scanner sc = new Scanner(System.in);
+        int distance, time, speed;
+        distance = sc.nextInt();
+        time = sc.nextInt();
+        speed = distance/time;
+        System.out.print("speed=" + speed);
+    }
+}
+class UserInput extends DataSet {
+    public void arraydata() {
+        Scanner on = new Scanner(System.in);
+        int i, Time, Distance;
+        int speed[] = new int[50];
+        for (i = 1; i <= 10; i++) {
+            Distance = on.nextInt();
+            Time = on.nextInt();
+            speed[i] = Distance / Time;
+            System.out.println("speed=" + speed[i]);
+        }
+    }
+}
+
+public class Raja {
+    public static void main(String[] args) {
+        UserInput ob=new UserInput();
+        ob.speeddata();
+        ob.arraydata();
+    }
+}
+
+
+            OUTPUT
+
+200
+10
+speed=20
+200
+30
+speed=6
+344
+45
+speed=7
+43
+54
+speed=0
+567
+54
+speed=10
+1000
+2
+speed=500
+34
+32
+speed=1
+123
+4
+speed=30
+345
+3
+speed=115
+223
+45
+speed=4
+5656
+43
+speed=131
